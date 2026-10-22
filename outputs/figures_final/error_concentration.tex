@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\caption{Errors concentrate at repeat/spacer boundaries. Boundary zone is $\pm5$ nt around each block transition. Enrichment is the share of errors in the zone divided by the share of tokens in it; $1.0$ would mean errors are spread uniformly. High interior accuracy with strong boundary enrichment indicates composition matching rather than use of the array's periodicity.}
+\label{tab:error-concentration}
+\begin{tabular}{lccccc}
+\toprule
+Positional encoding & Tokens in zone & Errors in zone & Enrichment & Acc. (zone) & Acc. (interior) \\
+\midrule
+Learned Abs. & 23.0\% & 30.0\% & 1.30$\times$ & 0.579 & 0.705 \\
+Sinusoidal & 23.0\% & 30.9\% & 1.34$\times$ & 0.580 & 0.719 \\
+RoPE & 23.0\% & 30.4\% & 1.32$\times$ & 0.589 & 0.718 \\
+ALiBi & 23.0\% & 30.4\% & 1.32$\times$ & 0.579 & 0.712 \\
+\bottomrule
+\end{tabular}
+\end{table}

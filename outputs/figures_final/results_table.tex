@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{CRISPR repeat-vs-spacer localization in \textit{S. islandicus}. Token-level test metrics, mean $\pm$ std over 6 seeds. MCC and balanced accuracy are reported because repeat-class F1 rewards degenerate constant predictors at this label prevalence: predicting the positive class everywhere attains F1 $0.588$, while any constant predictor attains MCC $0$ and balanced accuracy $0.5$.}
+\label{tab:pe-results}
+\begin{tabular}{lccccc}
+\toprule
+Positional encoding & MCC & Balanced acc. & F1 (repeat) & Precision & Recall \\
+\midrule
+Learned Abs. & $0.364 \pm 0.011$ & $0.684 \pm 0.005$ & $0.654 \pm 0.007$ & $0.589 \pm 0.009$ & $0.735 \pm 0.025$ \\
+Sinusoidal & $0.388 \pm 0.029$ & $0.696 \pm 0.015$ & $0.667 \pm 0.013$ & $0.600 \pm 0.021$ & $0.752 \pm 0.013$ \\
+RoPE & $0.390 \pm 0.036$ & $0.697 \pm 0.018$ & $0.667 \pm 0.022$ & $0.600 \pm 0.018$ & $0.752 \pm 0.048$ \\
+ALiBi & $0.345 \pm 0.030$ & $0.672 \pm 0.017$ & $0.616 \pm 0.029$ & $0.617 \pm 0.009$ & $0.617 \pm 0.053$ \\
+\midrule
+Predict all repeat & $0.000$ & $0.500$ & $0.588$ & $0.416$ & $1.000$ \\
+Predict all spacer & $0.000$ & $0.500$ & $0.000$ & -- & $0.000$ \\
+\bottomrule
+\end{tabular}
+\end{table}

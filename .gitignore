@@ -1,0 +1,46 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Downloaded genome files
+data/genomes/
+
+# Generated datasets
+outputs/datasets/
+
+# Model checkpoints and per-run predictions
+outputs/checkpoints/
+outputs/checkpoints_v2/
+outputs/checkpoints_triage/
+outputs/checkpoints_final/
+outputs/checkpoints_synthetic_smoke/
+
+# Intermediate / earlier experiment outputs
+outputs/figures_v2/
+outputs/figures_synthetic_smoke/
+outputs/metrics.json
+outputs/metrics_v2.json
+outputs/metrics_triage.json
+outputs/metrics_synthetic_smoke.json
+
+# Keep final compact results
+!outputs/metrics_final.json
+!outputs/figures_final/
+!outputs/figures_final/**
+
+# Local project preparation files
+project_context.txt
+project_inventory.txt

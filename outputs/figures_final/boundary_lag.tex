@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\caption{Accuracy recovery after a repeat/spacer transition. Offset is nucleotides elapsed since the most recent boundary; floor is accuracy at the first nucleotide of a new block and plateau the mean accuracy at offsets $\geq 20$ nt. $L_{50}$ is the offset at which accuracy reaches the midpoint between them, i.e. the effective lag of the predicted boundary. A model that localised boundaries exactly would have floor $=$ plateau and $L_{50}=0$.}
+\label{tab:boundary-lag}
+\begin{tabular}{lcccc}
+\toprule
+Positional encoding & Floor & Plateau & $L_{50}$ (nt) & Errors before $L_{50}$ \\
+\midrule
+Learned Abs. & 0.213 & 0.883 & 8 & 37\% \\
+Sinusoidal & 0.169 & 0.915 & 8 & 40\% \\
+RoPE & 0.222 & 0.929 & 10 & 48\% \\
+ALiBi & 0.298 & 0.832 & 9 & 38\% \\
+\bottomrule
+\end{tabular}
+\end{table}
