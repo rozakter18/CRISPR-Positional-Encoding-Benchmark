@@ -160,7 +160,7 @@ Generated datasets, model checkpoints, intermediate experiments, synthetic smoke
 
 ## Report
 
-The full project report is available at [docs/crispr_pe_benchmark.pdf](docs/crispr_pe_benchmark.pdf).
+The full report is being updated to reflect the final six-seed evaluation and will be added here once reconciled with the released results.
 
 ## Author
 
