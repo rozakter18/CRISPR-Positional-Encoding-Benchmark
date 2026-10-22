@@ -44,3 +44,5 @@ outputs/metrics_synthetic_smoke.json
 # Local project preparation files
 project_context.txt
 project_inventory.txt
+
+docs/crispr_pe_benchmark.pdf
